@@ -1,0 +1,25 @@
+# pallindrome
+//14th program on c
+#include<stdio.h>
+int main()
+{
+int n , originalinteger=0, reversedinteger=0 ,rem;
+printf("Enter the number u want to check \n");
+scanf("%d",&n);
+originalinteger=n;
+while(n!=0)
+{
+rem=n%10;
+reversedinteger=reversedinteger*10 + rem;
+n/=10;
+}
+if(originalinteger==reversedinteger)
+{
+printf("Pallindrome \n");
+}
+else
+{
+printf("Not in pallindrome \n");
+}
+return(0);
+}
